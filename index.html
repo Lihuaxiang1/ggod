@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>叙 · 致你 — Final Edition</title>
+<meta name="description" content="一部只放给你看的滚动叙事电影" />
+<link rel="preconnect" href="https://fonts.font.im" crossorigin />
+<link rel="preload" as="image" href="../ef99df7ea2eeb2100b0ea344e84cdd6d.jpg" fetchpriority="high" />
+<link rel="stylesheet" href="https://fonts.font.im/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Noto+Serif+SC:wght@300;500;700;900&family=Noto+Sans+SC:wght@300;400&family=JetBrains+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress"><span id="progress"></span></div>
+
+<aside class="rail" id="rail">
+  <span class="rail-mark">XU · 叙</span>
+  <nav id="railNav"></nav>
+  <span class="rail-year">MMXXVI</span>
+</aside>
+
+<!-- ===== 封面 ===== -->
+<section id="cover" class="cover">
+  <div class="cover-img"><img src="../ef99df7ea2eeb2100b0ea344e84cdd6d.jpg" alt="" fetchpriority="high" /></div>
+  <div class="cover-dim"></div>
+  <div class="cover-vignette"></div>
+  <div class="cover-content">
+    <p class="kicker">A SCROLLING LOVE LETTER · FINAL CUT</p>
+    <h1 class="cover-title"><span class="word">致</span><span class="word">你</span></h1>
+    <p class="cover-sub">十六帧光，一个人，<br/>一部还在放映的电影。</p>
+    <button id="enterBtn" class="cta">向下，拉开帷幕 <i>↓</i></button>
+    <p class="cover-hint">滚轮 / 触屏 / 方向键，皆可开幕</p>
+  </div>
+  <div class="cover-meta"><span id="coverDate">自遇见你的那天起</span><i></i><span>16 FRAMES</span></div>
+  <div class="scroll-line"><span></span></div>
+</section>
+
+<main id="main" class="main hidden">
+
+  <section class="statement" id="s0">
+    <p class="st-line">在遇见你之前，</p>
+    <p class="st-line">我以为日子，<em>不过就是日子。</em></p>
+    <p class="st-line">后来才知道，</p>
+    <p class="st-line">一个人的出现，</p>
+    <p class="st-line gold">能让所有的普通，都发着光。</p>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>YOU &nbsp;◆&nbsp; ARE &nbsp;◆&nbsp; MY &nbsp;◆&nbsp; FAVORITE &nbsp;◆&nbsp; STORY &nbsp;◆&nbsp; 致你 &nbsp;◆&nbsp; FOREVER &nbsp;◆&nbsp;</span>
+      <span>YOU &nbsp;◆&nbsp; ARE &nbsp;◆&nbsp; MY &nbsp;◆&nbsp; FAVORITE &nbsp;◆&nbsp; STORY &nbsp;◆&nbsp; 致你 &nbsp;◆&nbsp; FOREVER &nbsp;◆&nbsp;</span>
+    </div>
+  </div>
+
+  <div id="scenes"></div>
+
+  <section class="hpin" id="gallery">
+    <div class="hpin-sticky">
+      <header class="hpin-head">
+        <p class="kicker light">FRAMES</p>
+        <h2>那些舍不得删的你</h2>
+        <p class="hpin-hint">继续向下 ↓ 画面会向两边铺开</p>
+      </header>
+      <div class="film-perf top" aria-hidden="true"></div>
+      <div class="hpin-viewport">
+        <div class="hpin-track" id="hpinTrack"></div>
+      </div>
+      <div class="film-perf bottom" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="editorial" id="editorial">
+    <h2 class="ed-big">被你照亮的<br/><em>每一个瞬间</em></h2>
+    <figure class="ed-photo ed-a"><img id="edA" src="" alt="" loading="lazy" decoding="async"/><figcaption>—— 光落在你脸上</figcaption></figure>
+    <p class="ed-text ed-t1">真正让我确定心意的，从来不是什么惊天动地的时刻，而是那些普通得不能再普通的日常。一起吃的一顿饭，一起走过的一段路，一起窝着什么也不做的下午。那些片段没有配乐，没有慢镜头，却在我心里反复回放了一遍又一遍。</p>
+    <figure class="ed-photo ed-b"><img id="edB" src="" alt="" loading="lazy" decoding="async"/><figcaption>—— 可爱一如往常</figcaption></figure>
+    <p class="ed-text ed-t2">是你让我发现，原来"有人陪伴"这件事，能把寻常的日子过出闪闪发光的质感。我开始喜欢回家的路，因为路的另一头常常有你；我开始期待每一个明天，因为明天里有你。你什么都没做，却又好像，重新定义了我的整个世界。</p>
+    <figure class="ed-photo ed-c"><img id="edC" src="" alt="" loading="lazy" decoding="async"/></figure>
+  </section>
+
+  <section class="counters" id="counters">
+    <p class="kicker light">SINCE WE MET</p>
+    <div class="counter-row">
+      <div class="counter"><span class="num" data-to="365" data-suffix="">0</span><label>个想你的日子</label></div>
+      <div class="counter"><span class="num" data-to="9999" data-suffix="+">0</span><label>句没说够的晚安</label></div>
+      <div class="counter"><span class="num" data-to="100" data-suffix="%">0</span><label>的真心</label></div>
+      <div class="counter"><span class="num" data-to="1" data-suffix="">0</span><label>个你，无可替代</label></div>
+    </div>
+  </section>
+
+  <section class="finale" id="finale">
+    <img id="finaleImg" src="" alt="" loading="lazy" />
+    <div class="finale-veil"></div>
+    <div class="finale-text">
+      <p class="kicker light">FINALE</p>
+      <blockquote>幕会落，<br/>而我们，<em>不会。</em></blockquote>
+    </div>
+  </section>
+
+  <section class="letter" id="letter">
+    <div class="letter-card">
+      <div class="corner tl"></div><div class="corner tr"></div>
+      <div class="corner bl"></div><div class="corner br"></div>
+      <p class="kicker">A LETTER, FINALLY</p>
+      <h2>写在散场之后</h2>
+      <div id="letterBody"></div>
+      <p class="sign">— 永远把你放在第一位的我</p>
+    </div>
+  </section>
+
+  <section class="epilogue" id="epilogue">
+    <p class="kicker light">EPILOGUE</p>
+    <h2 class="epi-big">
+      <span>所以，</span>
+      <span>你愿意，</span>
+      <span class="gold">把余生，<br/>都交给我吗？</span>
+    </h2>
+    <p class="epi-sub">无论顺境逆境，无论春夏秋冬，<br/>我都想牵着你的手，一直走到灯光亮起。</p>
+    <div class="epi-seal"><span>FOREVER<br/>&amp; EVER</span></div>
+    <p class="epi-end">— 全剧终，但我们永不散场 —</p>
+  </section>
+
+  <footer class="foot">
+    <span>MADE WITH LOVE</span><i>◆</i><span>仅属于我们两个人</span><i>◆</i><span id="footYear"></span>
+  </footer>
+</main>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lb-close" aria-label="关闭">&times;</button>
+  <img id="lbImg" src="" alt="" />
+</div>
+
+<audio id="bgm" src="音乐/music.mp3" loop preload="none"></audio>
+<button id="musicBtn" class="music-btn" title="播放/暂停" aria-label="背景音乐">
+  <span class="disc"></span><span class="note">&#9835;</span>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" async></script>
+<script src="script.js" defer></script>
+</body>
+</html>
