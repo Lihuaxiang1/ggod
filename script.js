@@ -2,7 +2,7 @@
    叙 · Final Edition
    文案/配图直接改下面 CONTENT / GALLERY / EDITORIAL / LETTER
    ========================================================= */
-const IMG = "../";
+const IMG = "images/";
 const u = (f) => IMG + encodeURIComponent(f);
 
 const FINALE_IMG = "5f3e5960da412ae1be7e5465691a9a8d.jpg";
